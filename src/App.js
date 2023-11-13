@@ -7,17 +7,22 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
+     
       <Header />
-      <Herosection />
-      <Project/>
-      <About />
-      <Contact />
+      <Routes>
+        <Route path={"/"} element = {<Herosection/>}/>
+        <Route path={"/Project"} element = {<Project/>}/>
+        <Route path={"/About"} element = {<About />}/>
+        <Route path={"/Contact"} element = {<Contact />}/>
+      </Routes>  
       <Footer />
+     
+      
     </div>
       
   );
