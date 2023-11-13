@@ -6,9 +6,6 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-
-
-
 export default function Header() {
   return (
     <>
@@ -22,7 +19,7 @@ export default function Header() {
               <Nav.Link href="/Projects"> Projects </Nav.Link>
               <Nav.Link href="/About">About Us </Nav.Link>
               <Nav.Link href="/Contact"> Contact Us </Nav.Link>
-                
+
               {/* <Nav.Link href="#" disabled>
                 Link
               </Nav.Link> */}
